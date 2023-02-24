@@ -30,6 +30,10 @@ jobs:
             version: 8
             context: rockylinux-8
             file: rockylinux-8/Containerfile
+          - os: leap
+            version: 15
+            context: leap-15
+            file: leap-15/Containerfile
 
     permissions:
       contents: read
