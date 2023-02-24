@@ -1,5 +1,7 @@
 FROM docker.io/opensuse/leap:15
 RUN zypper update -y \
+    && zypper install -yt pattern \
+        base \
     && zypper install -y \
         bash \
         coreutils \
@@ -23,7 +25,6 @@ RUN zypper update -y \
         openssh-clients \
         openssh-server \
         pam \
-        patterns-openSUSE-base \
         pciutils \
         psmisc \
         rsync \
@@ -31,7 +32,6 @@ RUN zypper update -y \
         sed \
         strace \
         sudo \
-        syslinux \
         tar \
         tcpdump \
         timezone \
